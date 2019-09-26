@@ -1,0 +1,80 @@
+/*var num = 80;
+
+var desconto = num* 0.05;
+console.log(desconto);
+
+var num = 80;
+
+*= 0.05;
+console.log(desconto);*/
+
+
+function calcularDesconto(valor){
+  let desconto = valor * 0.05;
+  return desconto;
+}
+
+let resultado = calcularDesconto(5);
+console.log(resultado);
+
+
+--------------------
+function calcularDivisao(num1,num2){
+  
+ let divisao = num1/num2;
+  let resto = num1 % num2;
+  console.log(' O resultado da divisão é ' + divisao + ' e o resto é ' + resto);
+}
+
+calcularDivisao(10,5);
+
+--------------------------------------------
+function calcularImc(altura,peso){
+  
+ let IMC = peso / altura 
+  console.log(' O seu IMC é: ' + IMC);
+}
+
+calcularImc(1.58,78) ** 2;
+--------------------------
+
+/*function calculaBaskara(a,b,c){
+  
+  let delta = (b**2) - (4*a*c);
+  
+  console.log('delta:' + delta);
+  
+  let x1 = (-b + Math.sqrt(delta)) / (2*a);
+  
+  let x2 = (-b - Math.sqrt(delta)) / (2*a);
+  
+  console.log('O valor de x1 é ' + x1 + 'O valor de x2 é ' + x2 );
+  
+}
+
+calculaBaskara(1,5,4);*/
+
+function calculaDelta(a,b,c){
+  return (b**2) - (4*a*c);
+  
+}
+
+let resultadoDelta = calculaDelta(1,5,4);
+console.log(resultadoDelta);
+
+function calculaX1(a,b,c){
+  return (-b + Math.sqrt(resultadoDelta)) / (2*a);
+}
+
+let valordeX1 = calculaX1(1,5,4);
+console.log(valordeX1);
+
+function calculaX2(a,b,c){
+  return (-b - Math.sqrt(resultadoDelta)) / (2*a);
+}
+
+let valordeX2 = calculaX2(1,5,4);
+console.log(valordeX2);
+
+
+=----------------------------------------------------
