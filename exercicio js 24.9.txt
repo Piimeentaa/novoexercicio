@@ -102,3 +102,34 @@ let batidasDaVida = (resultadoIdade * resultado)
 console.log('O coração do usuário bateu a vida toda ' + batidasDaVida + ' vezes.');
 
 ---------------------------------------------------------
+/*function inverterNumero(num){
+  return num.toString().split('').reverse().join('');
+}
+console.log(inverterNumero(1234));*/
+
+/*function ordenarPalavra(world){
+  return world.split('').sort().join('');
+}
+
+console.log(ordenarPalavra('inconstitucional'));*/
+
+/*function iniciais(nome){
+  let espaco = nome.indexOf(' ');
+  let letra1 = nome.substr(0,1);
+  let letra2 = nome.substr(espaco+1,1);
+  return letra1+letra2;
+}
+
+console.log(iniciais('Isadora Romero'));*/
+
+/*function bilheteSorteado(num){
+  return Math.floor(Math.random()*10);
+}
+console.log(bilheteSorteado(56098));*/
+
+function calcularImc(altura,peso){
+  
+ return Math.floor(Math.random()*10);
+   
+}
+console.log(calcularImc(1.58,78)**2);
