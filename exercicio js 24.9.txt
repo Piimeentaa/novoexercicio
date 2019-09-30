@@ -133,3 +133,87 @@ function calcularImc(altura,peso){
    
 }
 console.log(calcularImc(1.58,78));
+------------------ dia 27 -------------------------
+function calcularPonto(resultado){
+  if (resultado === 'v'){
+    return '3 pontos';
+  } else if(resultado == 'e'){
+    return '1 pontos';  
+  }else if(resultado === 'd'){
+    return '0 pontos';
+  }else{
+    return 'Resultado desconhecido';
+  }
+}
+ 
+console.log('Bora Bahia Minha Porra!!');
+console.log(calcularPonto('v'));
+
+let resultado2 = '1';
+
+switch(resultado2){
+  case '3':
+    console.log('Você venceu');
+    break;
+  case '1':
+    console.log('Deu empate');
+    break;
+  case '0':
+    cosole.log('Perdeuu');
+    break;
+  default:
+    console.log('Não sabe escrever disgrama'); 
+}
+/*function verificarPalindromo(palavra){
+  let inverterPalavra = palavra.split('').reverse().join('');
+  if (inverterPalavra === palavra){
+    return(palavra + ' é um palíndromo.');
+  }else{
+    return(palavra + ' não é um palíndromo.');
+  } 
+}
+console.log(verificarPalindromo('cachorro'));*/
+
+/*function verificarNumero(numVerdade){
+let resto = numVerdade % 2;
+  if(resto == 0){
+    return ('par');
+}else{
+   return ('impar');
+}
+}
+console.log(verificarNumero(10));*/
+
+function classificaAngulo(valor){
+  if( valor > 0 && valor < 90)
+  {
+    return ('Ângulo agudo');
+    
+  } else if( valor === 90 )
+  {
+    return ('Ângulo reto');
+  }
+  else if( valor > 90 && valor < 180 )
+  {
+    return ('Ângulo obtuso');
+    
+  }
+  else if( valor === 0 || valor === 180 )
+  {
+    return ('Ângulo raso');
+  } 
+  else if( valor > 180 && valor < 360)
+  {
+    return ('Ângulo Côncavo');
+  } 
+  else if ( valor === 360)
+  {
+    return ('Ângulo completo');
+  } 
+  else 
+  { 
+    return ('Não sabe escrever, vagabundo');
+  } 
+}
+
+console.log(classificaAngulo(45));
