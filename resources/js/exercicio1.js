@@ -14,4 +14,4 @@ function carrinhoDeCompras(codigoItem,quantidade){
   }
 }
 
-carrinhoDeCompras(100,2);
+carrinhoDeCompras(100,2)
