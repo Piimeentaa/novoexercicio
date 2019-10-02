@@ -217,3 +217,22 @@ function classificaAngulo(valor){
 }
 
 console.log(classificaAngulo(45));
+--------------------------------------------------------------
+function classificaProduto(codigo){
+  if(codigo === 1){
+    console.log('Alimento não-perecível')
+}else if(codigo >=2 && codigo <= 4 )
+{
+  console.log('Alimento perecível')
+}else if(codigo == 5 && codigo == 6){
+    console.log('Vestuário')
+}else if(codigo === 7){
+    console.log('Higiene pessoal')
+}else if(codigo >= 8 && codigo <= 15){
+    console.log('Limpeza e Utensílios Domésticos')
+}else{
+    console.log('Código inválido');
+}
+}
+classificaProduto(3)
+--------------------------------------------------------------
